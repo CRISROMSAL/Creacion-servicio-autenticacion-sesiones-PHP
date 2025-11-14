@@ -1,0 +1,124 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Párrafos */
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Botones */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Botón de cerrar sesión */
+.btn-logout {
+    background-color: #e74c3c;
+}
+
+/* Mensaje de error */
+.error {
+    color: #e74c3c;
+    text-align: center;
+    padding: 10px;
+    background-color: #fadbd8;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.mensaje p {
+    color: #333;
+    text-align: left;
+    margin: 5px 0;
+}
+
+/* Advertencia */
+.warning {
+    background-color: #fff3cd;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #f39c12;
+    margin: 15px 0;
+}
+
+.warning p {
+    color: #856404;
+    text-align: left;
+    margin: 8px 0;
+}
+
+/* Información del pie */
+.info-text {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    line-height: 1.6;
+}
+
