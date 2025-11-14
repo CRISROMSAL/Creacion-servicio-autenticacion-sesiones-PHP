@@ -44,7 +44,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { //verifica que el formulario ha sido
 </head>
 <body>
     <div class="container">
-        <h2>Iniciar Sesión</h2>
+        <div class="logo"></div>
+        <h2>Re·Cordis</h2>
+        <p>Inicia sesión para acceder a tu cuenta</p>
         <form method="POST" action="">
             <input type="text" name="nombreusuario" placeholder="Nombre de usuario" required>
             <input type="password" name="contraseña" placeholder="Contraseña" required>
@@ -53,6 +55,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { //verifica que el formulario ha sido
         <?php if ($error): ?>
             <p class="error"><?php echo $error; ?></p>
         <?php endif; ?>
+
+        <p class="info-text">
+             Instagram: re.cordistudio<br>
+             Contacto: recordistudio@gmail.com<br>
+             Envíos a toda España<br>
+            Gracias por visitar Re·Cordis. Si tienes alguna pregunta, no dudes en contactarnos.
+        </p>
     </div>
 </body>
 </html>

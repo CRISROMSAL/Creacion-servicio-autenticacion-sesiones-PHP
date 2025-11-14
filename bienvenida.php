@@ -41,7 +41,8 @@ $mensaje_bienvenida = $mensajes[$nombreUsuario] ?? "Bienvenido al sistema."; //m
 </head>
 <body>
     <div class="container">
-        <h2>¡Bienvenido!</h2>
+        <div class="logo"></div>
+        <h2>¡Bienvenido a Re·Cordis!</h2>
         
         <div class="mensaje">
             <h3>Información del usuario:</h3>
@@ -51,12 +52,21 @@ $mensaje_bienvenida = $mensajes[$nombreUsuario] ?? "Bienvenido al sistema."; //m
         </div>
         
         <div class="mensaje">
-            <p><?php echo $mensaje_personalizado; ?></p>
+            <p><?php echo $mensaje_bienvenida; ?></p>
         </div>
         
         <a href="bienvenida.php?logout=true">
             <button class="btn-logout">Cerrar Sesión</button>
         </a>
+
+                
+        <p class="info-text">
+             Instagram: re.cordistudio<br>
+             Contacto: recordistudio@gmail.com<br>
+             Envíos a toda España<br>
+            Gracias por visitar Re·Cordis. Si tienes alguna pregunta, no dudes en contactarnos.
+        </p>
+
     </div>
 </body>
 </html>

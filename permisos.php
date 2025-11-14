@@ -17,16 +17,23 @@ if (isset($_SESSION['usuario'])) {
 </head>
 <body>
     <div class="container">
-        <h2>Acceso Denegado</h2>
+        <h2>Acceso Restringido</h2>
         
         <div class="warning">
             <p><strong>No tienes permisos para acceder a esta página.</strong></p>
-            <p>Debes iniciar sesión para continuar.</p>
+            <p>Para continuar, inicia sesión con tu cuenta de Re·Cordis.</p>
         </div>
         
         <a href="login.php">
             <button>Ir al Login</button>
         </a>
+
+        <p class="info-text">
+             Instagram: re.cordistudio<br>
+             Contacto: recordistudio@gmail.com<br>
+             Envíos a toda España<br>
+            Gracias por visitar Re·Cordis. Si tienes alguna pregunta, no dudes en contactarnos.
+        </p>
     </div>
 </body>
 </html>
