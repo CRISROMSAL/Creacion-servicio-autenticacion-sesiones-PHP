@@ -3,6 +3,9 @@
 @use 'mixins' as *;
 @use 'animation' as *;
 
+//Importa el modulo de funciones de colores de SAAS para ajustar los colores de oscurecer y aclarar
+@use 'sass:color'; 
+
 // Importa las fuentes de Google Fonts (Bodoni Moda y Raleway)
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600;700&family=Raleway:wght@300;400;600&display=swap');
 
@@ -117,7 +120,7 @@ button {
 
     // Cuando pasamos el ratón sobre el botón
     &:hover {
-        background-color: darken($color-secundario, 5%); // Se oscurece el color secundario un 5%
+        background-color: color.adjust($color-secundario, $lightness: -5%) // Se oscurece el color secundario un 5%. color.adjust() es una función de SASS. $lightness es un parámetro de la función
     }
 }
 
@@ -127,7 +130,7 @@ button {
 
     // Cuando pasamos el ratón sobre el botón
     &:hover {
-        background-color: darken($color-principal, 10%); //se oscurece el color principal un 10%
+        background-color: color.adjust($color-principal, $lightness: -10%); //se oscurece el color principal un 10%
     }
 }
 
