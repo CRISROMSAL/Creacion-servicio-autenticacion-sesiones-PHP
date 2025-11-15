@@ -5,59 +5,83 @@
     box-sizing: border-box;
 }
 
+/* HTML y Body */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* Cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     display: flex;
+    flex-direction: column;
+    min-height: 100vh;  
+}
+
+/* Contenedor principal que empuja el footer abajo */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     padding: 20px;
 }
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
 
 /* Contenedor principal */
 .container {
     background: white;
-    padding: 40px;
+    padding: 60px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 550px;
     max-width: 100%;
 }
 
 h2 {
     text-align: center;
-    color: #333;
+    color: #C1272D;
     margin-bottom: 20px;
 }
 
 h3 {
-    color: #555;
+    color: #F57AAA;
     margin-bottom: 10px;
 }
 
 /* Párrafos */
 p {
     text-align: center;
-    color: #666;
+    color: #636364;
     margin-bottom: 20px;
     font-size: 14px;
 }
 
-/* Logo */
-.logo {
-    text-align: center;
-    font-size: 50px;
-    margin-bottom: 15px;
-}
 
 /* Inputs */
 input {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #C1272D;
     border-radius: 5px;
     font-size: 14px;
 }
@@ -66,7 +90,7 @@ input {
 button {
     width: 100%;
     padding: 12px;
-    background-color: #8e44ad;
+    background-color: #F57AAA;
     color: white;
     border: none;
     border-radius: 5px;
@@ -77,7 +101,7 @@ button {
 
 /* Botón de cerrar sesión */
 .btn-logout {
-    background-color: #e74c3c;
+    background-color: #C1272D;
 }
 
 /* Mensaje de error */
@@ -91,7 +115,7 @@ button {
 }
 
 .mensaje p {
-    color: #333;
+    color: #636364;
     text-align: left;
     margin: 5px 0;
 }
@@ -101,30 +125,30 @@ button {
     background-color: #fff3cd;
     padding: 20px;
     border-radius: 8px;
-    border-left: 4px solid #f39c12;
+    border-left: 4px solid #C1272D;
     margin: 15px 0;
 }
 
 .warning p {
-    color: #856404;
+    color: #636364;
     text-align: left;
     margin: 8px 0;
 }
 
 /* Footer */
 .footer {
+    background-color: #f9dde9;
     text-align: center;
-    color: #999;
-    font-size: 12px;
-    margin-top: 30px;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    max-width: 400px;
+    padding: 25px 20px;
+    font-size: 15px;
     line-height: 1.8;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .footer p {
     margin: 5px 0;
+    color: #636364;
 }
 

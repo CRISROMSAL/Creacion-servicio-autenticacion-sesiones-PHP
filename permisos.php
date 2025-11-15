@@ -16,17 +16,20 @@ if (isset($_SESSION['nombre'])) {
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Acceso Restringido</h2>
-        
-        <div class="warning">
-            <p><strong>No tienes permisos para acceder a esta página.</strong></p>
-            <p>Para continuar, inicia sesión con tu cuenta de Re·Cordis.</p>
+    <div class="main-content">
+        <div class="logo"> <img src="img/logotipo.png" alt="Logo Re·Cordis"> </div>
+        <div class="container">
+            <h2>Acceso Restringido</h2>
+            
+            <div class="warning">
+                <p><strong>No tienes permisos para acceder a esta página.</strong></p>
+                <p>Para continuar, inicia sesión con tu cuenta de Re·Cordis.</p>
+            </div>
+            
+            <a href="login.php">
+                <button>Ir al Login</button>
+            </a>
         </div>
-        
-        <a href="login.php">
-            <button>Ir al Login</button>
-        </a>
     </div>
 
     <footer class="footer">

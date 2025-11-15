@@ -44,18 +44,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { //verifica que el formulario ha sido
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <div class="container">
-        <div class="logo"></div>
-        <h2>Re·Cordis</h2>
-        <p>Inicia sesión para acceder a tu cuenta</p>
-        <form method="POST" action="">
-            <input type="text" name="nombreusuario" placeholder="Nombre de usuario" required>
-            <input type="password" name="contraseña" placeholder="Contraseña" required>
-            <button type="submit">Entrar</button>
-        </form>
-        <?php if ($error): ?>
-            <p class="error"><?php echo $error; ?></p>
-        <?php endif; ?>
+    <div class="main-content">
+        <div class="logo"> <img src="img/logotipo.png" alt="Logo Re·Cordis"> </div>
+        <div class="container">
+            <h2>Re·Cordis</h2>
+            <p>Inicia sesión para acceder a tu cuenta</p>
+            <form method="POST" action="">
+                <input type="text" name="nombreusuario" placeholder="Nombre de usuario" required>
+                <input type="password" name="contraseña" placeholder="Contraseña" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <?php if ($error): ?>
+                <p class="error"><?php echo $error; ?></p>
+            <?php endif; ?>
+        </div>
     </div>
 
     <footer class="footer">

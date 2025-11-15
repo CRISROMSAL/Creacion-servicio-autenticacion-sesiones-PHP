@@ -34,25 +34,28 @@ $mensaje_bienvenida = "¡Bienvenido/a, " . $usuario . "! Gracias por acceder a R
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <div class="container">
-        <div class="logo"></div>
-        <h2>¡Bienvenido a Re·Cordis!</h2>
-        
-        <div class="mensaje">
-            <h3>Información del usuario:</h3>
-            <p><strong>Usuario:</strong> <?php echo $usuario; ?></p>
-            <p><strong>Fecha:</strong> <?php echo $fecha_actual; ?></p>
-            <p><strong>Hora actual:</strong> <?php echo $hora_actual; ?></p>
-        </div>
-        
-        <div class="mensaje">
-            <p><?php echo $mensaje_bienvenida; ?></p>
-        </div>
-        
-        <a href="bienvenida.php?logout=true">
-            <button class="btn-logout">Cerrar Sesión</button>
-        </a>
+    <div class="main-content">
+        <div class="logo"> <img src="img/logotipo.png" alt="Logo Re·Cordis"> </div>
+        <div class="container">
+            <div class="logo"></div>
+            <h2>¡Bienvenido a Re·Cordis!</h2>
+            
+            <div class="mensaje">
+                <h3>Información del usuario:</h3>
+                <p><strong>Usuario:</strong> <?php echo $usuario; ?></p>
+                <p><strong>Fecha:</strong> <?php echo $fecha_actual; ?></p>
+                <p><strong>Hora actual:</strong> <?php echo $hora_actual; ?></p>
+            </div>
+            
+            <div class="mensaje">
+                <p><?php echo $mensaje_bienvenida; ?></p>
+            </div>
+            
+            <a href="bienvenida.php?logout=true">
+                <button class="btn-logout">Cerrar Sesión</button>
+            </a>
 
+        </div>
     </div>
 
     <footer class="footer">
