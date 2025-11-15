@@ -19,15 +19,9 @@ $usuario = $_SESSION['nombre'];
 $hora_actual = date('H:i:s');
 $fecha_actual = date('d/m/Y');
 
-// Mensaje personalizado según el usuario
-$mensajes = [
-    "admin" => "Bienvenido administrador, aquí tienes acceso al sistema.",
-    "usuario" => "Bienvenido usuario, aquí puedes encontrar la información que necesites.",
-    "DAW2" => "Bienvenido usuario de segundo de desarrollo de aplicaciones web, aquí puedes encontrar la información que necesites.",
-    "CristinaRoman" => "Bienvenida Cristina Román, aquí puedes encontrar la información que necesites."
-];
+// Mensaje bienvenida especifico según el usuario
+$mensaje_bienvenida = "¡Bienvenido/a, " . $usuario . "! Gracias por acceder a Re·Cordis, aquí encontraras toda la información que necesitas.";
 
-$mensaje_bienvenida = $mensajes[$nombreUsuario] ?? "Bienvenido al sistema."; //mensaje que se le pondría a un usuario que esté logueado pero no esté en array de mensajes
 ?>
 
 
@@ -59,14 +53,14 @@ $mensaje_bienvenida = $mensajes[$nombreUsuario] ?? "Bienvenido al sistema."; //m
             <button class="btn-logout">Cerrar Sesión</button>
         </a>
 
-                
-        <p class="info-text">
-             Instagram: re.cordistudio<br>
-             Contacto: recordistudio@gmail.com<br>
-             Envíos a toda España<br>
-            Gracias por visitar Re·Cordis. Si tienes alguna pregunta, no dudes en contactarnos.
-        </p>
-
     </div>
+
+    <footer class="footer">
+        <p>Instagram: re.cordistudio</p>
+        <p>Contacto: recordistudio@gmail.com</p>
+        <p>Envíos a toda España</p>
+        <p>Gracias por visitar Re·Cordis. Si tienes alguna pregunta, no dudes en contactarnos.</p>
+    </footer>
+    
 </body>
 </html>

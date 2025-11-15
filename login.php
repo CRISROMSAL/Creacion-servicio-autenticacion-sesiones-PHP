@@ -55,13 +55,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { //verifica que el formulario ha sido
         <?php if ($error): ?>
             <p class="error"><?php echo $error; ?></p>
         <?php endif; ?>
-
-        <p class="info-text">
-             Instagram: re.cordistudio<br>
-             Contacto: recordistudio@gmail.com<br>
-             Envíos a toda España<br>
-            Gracias por visitar Re·Cordis. Si tienes alguna pregunta, no dudes en contactarnos.
-        </p>
     </div>
+
+    <footer class="footer">
+        <p>Instagram: re.cordistudio</p>
+        <p>Contacto: recordistudio@gmail.com</p>
+        <p>Envíos a toda España</p>
+        <p>Gracias por visitar Re·Cordis. Si tienes alguna pregunta, no dudes en contactarnos.</p>
+    </footer>
+
 </body>
 </html>

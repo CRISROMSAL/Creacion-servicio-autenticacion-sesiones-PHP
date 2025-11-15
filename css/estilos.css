@@ -111,14 +111,20 @@ button {
     margin: 8px 0;
 }
 
-/* Información del pie */
-.info-text {
+/* Footer */
+.footer {
     text-align: center;
     color: #999;
     font-size: 12px;
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #ddd;
-    line-height: 1.6;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    max-width: 400px;
+    line-height: 1.8;
+}
+
+.footer p {
+    margin: 5px 0;
 }
 
