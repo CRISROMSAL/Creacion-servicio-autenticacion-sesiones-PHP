@@ -1,27 +1,31 @@
-/* Reset básico */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600;700&family=Raleway:wght@300;400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* HTML y Body */
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
-/* Cuerpo de la página */
+/* Fondo degradado animado */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(-45deg, #f9dde9, #fce4ec, #f8bbd0, #f48fb1);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;  
+    min-height: 100vh;
 }
 
-/* Contenedor principal que empuja el footer abajo */
+@keyframes gradientAnimation {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
 .main-content {
     flex: 1;
     display: flex;
@@ -31,7 +35,7 @@ body {
     padding: 20px;
 }
 
-/* Logo */
+/* Logo flotante */
 .logo {
     text-align: center;
     margin-bottom: 20px;
@@ -39,54 +43,73 @@ body {
 
 .logo img {
     max-width: 250px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+    animation: floatLogo 3s ease-in-out infinite;
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
 }
 
+@keyframes floatLogo {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
 
-/* Contenedor principal */
+/* Container glassmorphism con animación */
 .container {
-    background: white;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(193, 39, 45, 0.1);
     padding: 60px;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 32px rgba(193, 39, 45, 0.15);
     width: 550px;
     max-width: 100%;
+    animation: slideIn 0.8s ease-out;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(193, 39, 45, 0.2);
 }
 
 h2 {
-    text-align: center;
+    font-family: 'Bodoni Moda', serif;
     color: #C1272D;
+    text-align: center;
     margin-bottom: 20px;
 }
 
 h3 {
+    font-family: 'Bodoni Moda', serif;
     color: #F57AAA;
     margin-bottom: 10px;
 }
 
-/* Párrafos */
 p {
-    text-align: center;
     color: #636364;
+    text-align: center;
     margin-bottom: 20px;
     font-size: 14px;
 }
 
-
-/* Inputs */
 input {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border: 1px solid #C1272D;
+    border: 2px solid #C1272D;
     border-radius: 5px;
     font-size: 14px;
 }
 
-/* Botones */
+input:focus {
+    outline: none;
+    border-color: #F57AAA;
+}
+
 button {
     width: 100%;
     padding: 12px;
@@ -99,19 +122,25 @@ button {
     margin-top: 10px;
 }
 
-/* Botón de cerrar sesión */
+button:hover {
+    background-color: #f06292;
+}
+
 .btn-logout {
     background-color: #C1272D;
 }
 
-/* Mensaje de error */
+.btn-logout:hover {
+    background-color: #a01f24;
+}
+
 .error {
     color: #e74c3c;
-    text-align: center;
-    padding: 10px;
     background-color: #fadbd8;
+    padding: 10px;
     border-radius: 5px;
     margin-top: 10px;
+    text-align: center;
 }
 
 .mensaje p {
@@ -120,7 +149,6 @@ button {
     margin: 5px 0;
 }
 
-/* Advertencia */
 .warning {
     background-color: #fff3cd;
     padding: 20px;
@@ -135,20 +163,17 @@ button {
     margin: 8px 0;
 }
 
-/* Footer */
 .footer {
     background-color: #f9dde9;
+    color: #636364;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
     padding: 25px 20px;
     font-size: 15px;
     line-height: 1.8;
     width: 100%;
-    margin: 0;
-    box-sizing: border-box;
 }
 
 .footer p {
     margin: 5px 0;
-    color: #636364;
 }
-
