@@ -2,7 +2,7 @@
 session_start();
 
 // Si está autenticado, redirigir a bienvenida, es una protección para que un usuario logueado no entre en esta página
-if (isset($_SESSION['usuario'])) {
+if (isset($_SESSION['nombre'])) {
     header("Location: bienvenida.php");
     exit();
 }
@@ -13,7 +13,7 @@ if (isset($_SESSION['usuario'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceso Denegado</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <div class="container">

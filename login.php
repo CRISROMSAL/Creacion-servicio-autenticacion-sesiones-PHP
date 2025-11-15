@@ -6,7 +6,8 @@ $usuarios = [
     "admin" => "1234",
     "usuario" => "abcd",
     "DAW2" => "DAW2",
-    "CristinaRoman" => "CristinaRoman"
+    "CristinaRoman" => "CristinaRoman",
+    "CarlosBasulto" => "CarlosBasulto",
 ];
 
 // Si ya está logueado, redirigir a bienvenida, es decir, comprueba si este la variable de sesion 'usuario' 
@@ -40,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { //verifica que el formulario ha sido
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <div class="container">
