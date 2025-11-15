@@ -37,7 +37,7 @@ html, body {
 
 body {
   font-family: "Raleway", sans-serif;
-  background: linear-gradient(-45deg, #f9dde9, #fce4ec, #f8bbd0, #f48fb1);
+  background: linear-gradient(-45deg, rgb(249, 221, 233), rgb(252, 228, 236), rgb(248, 187, 208), rgb(244, 143, 177));
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   display: flex;
@@ -85,19 +85,19 @@ body {
 
 h2 {
   font-family: "Bodoni Moda", serif;
-  color: #C1272D;
+  color: rgb(193, 39, 45);
   text-align: center;
   margin-bottom: 20px;
 }
 
 h3 {
   font-family: "Bodoni Moda", serif;
-  color: #F57AAA;
+  color: rgb(245, 122, 170);
   margin-bottom: 10px;
 }
 
 p {
-  color: #636364;
+  color: rgb(99, 99, 100);
   text-align: center;
   margin-bottom: 20px;
   font-size: 14px;
@@ -107,20 +107,20 @@ input {
   width: 100%;
   padding: 12px;
   margin: 10px 0;
-  border: 2px solid #C1272D;
+  border: 2px solid rgb(193, 39, 45);
   border-radius: 5px;
   font-size: 14px;
   transition: border-color 0.3s ease;
 }
 input:focus {
   outline: none;
-  border-color: #F57AAA;
+  border-color: rgb(245, 122, 170);
 }
 
 button {
   width: 100%;
   padding: 12px;
-  background-color: #F57AAA;
+  background-color: rgb(245, 122, 170);
   color: white;
   border: none;
   border-radius: 5px;
@@ -134,15 +134,15 @@ button:hover {
 }
 
 .btn-logout {
-  background-color: #C1272D;
+  background-color: rgb(193, 39, 45);
 }
 .btn-logout:hover {
   background-color: rgb(150.5732758621, 30.4267241379, 35.1077586207);
 }
 
 .error {
-  color: #e74c3c;
-  background-color: #fadbd8;
+  color: rgb(231, 76, 60);
+  background-color: rgb(250, 219, 216);
   padding: 10px;
   border-radius: 5px;
   margin-top: 10px;
@@ -150,27 +150,27 @@ button:hover {
 }
 
 .mensaje p {
-  color: #636364;
+  color: rgb(99, 99, 100);
   text-align: left;
   margin: 5px 0;
 }
 
 .warning {
-  background-color: #fff3cd;
+  background-color: rgb(255, 243, 205);
   padding: 20px;
   border-radius: 8px;
-  border-left: 4px solid #C1272D;
+  border-left: 4px solid rgb(193, 39, 45);
   margin: 15px 0;
 }
 .warning p {
-  color: #636364;
+  color: rgb(99, 99, 100);
   text-align: left;
   margin: 8px 0;
 }
 
 .footer {
-  background-color: #f9dde9;
-  color: #636364;
+  background-color: rgb(249, 221, 233);
+  color: rgb(99, 99, 100);
   text-align: center;
   font-family: "Raleway", sans-serif;
   padding: 25px 20px;

@@ -1,14 +1,14 @@
 // Colores
-$color-principal: #C1272D;
-$color-secundario: #F57AAA;
-$color-texto: #636364;
-$color-footer-bg: #f9dde9;
-$color-error: #e74c3c;
-$color-error-bg: #fadbd8;
-$color-warning-bg: #fff3cd;
+$color-principal: rgba(193, 39, 45, 1);
+$color-secundario: rgba(245, 122, 170, 1);
+$color-texto: rgba(99, 99, 100, 1);
+$color-footer-bg: rgba(249, 221, 233, 1);
+$color-error: rgba(231, 76, 60, 1);
+$color-error-bg: rgba(250, 219, 216, 1);
+$color-warning-bg: rgba(255, 243, 205, 1);
 
 // Gradiente animado
-$gradient-colors: #f9dde9, #fce4ec, #f8bbd0, #f48fb1;
+$gradient-colors: rgba(249, 221, 233, 1), rgba(252, 228, 236, 1), rgba(248, 187, 208, 1), rgba(244, 143, 177, 1);
 
 // Fuentes
 $font-principal: 'Raleway', sans-serif;
